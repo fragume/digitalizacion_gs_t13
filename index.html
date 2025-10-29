@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digitalización aplicada · Temas, Actividad y Autoevaluación</title>
+  <meta name="description" content="Portal de clase para materiales de los temas, actividad en grupo y autoevaluación." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💻</text></svg>">
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Tipografías del sistema para rendimiento */
+    :root{--ring: rgba(59,130,246,.35)}
+    *{scroll-margin-top:7rem}
+    .card{ @apply rounded-2xl shadow-md p-6 bg-white border border-slate-100; }
+    .btn{ @apply inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-slate-200 shadow-sm hover:shadow-md transition; }
+    .btn-primary{ @apply border-blue-600 bg-blue-600 text-white hover:bg-blue-700; }
+    .badge{ @apply text-xs px-2 py-1 rounded-full border border-slate-200; }
+    .anchor{ @apply absolute -top-24; }
+    .link{ @apply underline decoration-slate-300 underline-offset-4 hover:decoration-2; }
+    .k-card{@apply rounded-2xl p-4 border border-slate-200 bg-slate-50}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg">Digitalización aplicada</a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#temas" class="hover:underline">Temas</a>
+        <a href="#actividad" class="hover:underline">Actividad en grupo</a>
+        <a href="#autoevaluacion" class="hover:underline">Autoevaluación</a>
+        <a href="#creditos" class="hover:underline">Créditos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="border-b border-slate-200 bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 items-center gap-8">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-semibold leading-tight">Recursos de clase, actividad y autoevaluación</h1>
+        <p class="mt-3 text-slate-600">Aquí tienes centralizados los materiales de los temas, el enunciado y rúbrica de la actividad en grupo, y los enlaces a los cuestionarios.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#temas" class="btn btn-primary">Ver Temas</a>
+          <a href="#actividad" class="btn">Ir a Actividad</a>
+          <a href="#autoevaluacion" class="btn">Autoevaluación</a>
+        </div>
+      </div>
+      <div class="k-card">
+        <p class="text-sm text-slate-600">Cómo editar:</p>
+        <ol class="list-decimal ml-5 mt-2 text-sm text-slate-600">
+          <li>Sube los PDFs a <code>/assets</code> del repo: <code>tema1.pdf</code>, <code>tema2.pdf</code>, <code>tema3.pdf</code>, <code>actividad_enunciado.pdf</code>, <code>rubrica_actividad.pdf</code>.</li>
+          <li>Reemplaza los enlaces de Kahoot y del Form en la sección “Autoevaluación”.</li>
+          <li>Elige plataforma de entrega y pega el enlace en “Entrega de presentaciones”.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Temas -->
+  <main id="contenido" class="max-w-5xl mx-auto px-4 py-10 space-y-10">
+    <span id="temas" class="anchor"></span>
+    <section class="space-y-6">
+      <h2 class="text-2xl font-semibold">Temas vistos en clase</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Tema 1 -->
+        <article class="card">
+          <h3 class="font-semibold text-lg">Tema 1</h3>
+          <p class="mt-1 text-sm text-slate-600">Conceptos clave de digitalización y transformación digital.</p>
+          <div class="mt-4 flex items-center gap-3">
+            <a class="btn" href="./assets/tema1.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+            <span class="badge">PDF</span>
+          </div>
+        </article>
+        <!-- Tema 2 -->
+        <article class="card">
+          <h3 class="font-semibold text-lg">Tema 2</h3>
+          <p class="mt-1 text-sm text-slate-600">THD, modelos de negocio y sentencias categóricas.</p>
+          <div class="mt-4 flex items-center gap-3">
+            <a class="btn" href="./assets/tema2.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+            <span class="badge">PDF</span>
+          </div>
+        </article>
+        <!-- Tema 3 -->
+        <article class="card">
+          <h3 class="font-semibold text-lg">Tema 3</h3>
+          <p class="mt-1 text-sm text-slate-600">Cloud: IaaS · PaaS · SaaS y casos.</p>
+          <div class="mt-4 flex items-center gap-3">
+            <a class="btn" href="./assets/tema3.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+            <span class="badge">PDF</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Actividad en grupo -->
+    <span id="actividad" class="anchor"></span>
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Actividad en grupo</h2>
+      <p class="text-slate-600">Descarga el enunciado y consulta la rúbrica. La entrega de presentaciones se hará mediante el enlace de “Entrega” indicado abajo.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="card">
+          <h3 class="font-semibold">Enunciado de la actividad</h3>
+          <p class="mt-1 text-sm text-slate-600">PDF con instrucciones y requisitos.</p>
+          <a class="mt-4 btn" href="./assets/actividad_enunciado.pdf" target="_blank" rel="noopener">Descargar enunciado</a>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Rúbrica de evaluación</h3>
+          <p class="mt-1 text-sm text-slate-600">Criterios y niveles de logro.</p>
+          <a class="mt-4 btn" href="./assets/rubrica_actividad.pdf" target="_blank" rel="noopener">Descargar rúbrica</a>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Entrega de presentaciones</h3>
+          <p class="mt-1 text-sm text-slate-600">Sube tu PDF o PPT antes de la exposición.</p>
+          <!-- Sustituye href por la opción elegida (ver propuestas abajo) -->
+          <a id="link-entrega" class="mt-4 btn btn-primary" href="#propuestas-entrega">Elegir plataforma</a>
+          <p class="mt-3 text-xs text-slate-500">Formato admitido: <strong>PDF</strong> o <strong>PPT/PPTX</strong>. Máx. 100 MB (sujeto a la plataforma).</p>
+        </article>
+      </div>
+
+      <!-- Propuestas de plataformas para entrega (docente = único admin) -->
+      <details id="propuestas-entrega" class="card">
+        <summary class="cursor-pointer font-semibold">Propuestas para la entrega (elige y pega el enlace arriba)</summary>
+        <div class="mt-4 space-y-4 text-sm text-slate-700">
+          <div>
+            <h4 class="font-medium">Opción A · Google Forms (con subida de archivos)</h4>
+            <ul class="list-disc ml-5">
+              <li>Requiere cuenta Google y, en algunos casos, dominio del centro (Google Workspace) para permitir subida de ficheros.</li>
+              <li>Ventaja: controla permisos, recopila nombres y correos automáticamente.</li>
+              <li>Cómo usar: crea un Form con pregunta de "Subir archivo" y límite de formato a PDF/PPT.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium">Opción B · Dropbox “Solicitud de archivos”</h4>
+            <ul class="list-disc ml-5">
+              <li>Los alumnos suben sin ver el resto de archivos; sólo tú ves las entregas.</li>
+              <li>Enlace único por carpeta; configura límite de tipos y fecha tope.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium">Opción C · OneDrive “Solicitar archivos”</h4>
+            <ul class="list-disc ml-5">
+              <li>Similar a Dropbox; los estudiantes no ven el contenido de la carpeta.</li>
+              <li>Integra con cuentas Microsoft educativas.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium">Opción D · Nextcloud “File Drop”</h4>
+            <ul class="list-disc ml-5">
+              <li>Autoalojado (si el centro dispone de Nextcloud). Cargas anónimas, sólo admin ve ficheros.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium">Opción E · GitHub Classroom</h4>
+            <ul class="list-disc ml-5">
+              <li>Para repositorios por grupo. Útil si la actividad requiere código o control de versiones.</li>
+              <li>Menos cómodo para PDFs sueltos, pero muy potente para proyectos.</li>
+            </ul>
+          </div>
+          <p class="text-xs text-slate-500">Tras elegir, edita el atributo <code>href</code> del botón “Entrega de presentaciones”.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Autoevaluación -->
+    <span id="autoevaluacion" class="anchor"></span>
+    <section class="space-y-6">
+      <h2 class="text-2xl font-semibold">Autoevaluación</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="card">
+          <h3 class="font-semibold">Kahoots de repaso</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li>• Tema 1 → <a class="link" href="https://kahoot.it/challenge/TEMA1" target="_blank" rel="noopener">Enlace Kahoot</a></li>
+            <li>• Tema 2 → <a class="link" href="https://kahoot.it/challenge/TEMA2" target="_blank" rel="noopener">Enlace Kahoot</a></li>
+            <li>• Tema 3 → <a class="link" href="https://kahoot.it/challenge/TEMA3" target="_blank" rel="noopener">Enlace Kahoot</a></li>
+          </ul>
+          <p class="mt-3 text-xs text-slate-500">Sustituye los IDs de arriba por los de tus juegos (Challenge/Asynchronous o Live, según convenga).</p>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Formulario de evaluación</h3>
+          <p class="mt-1 text-sm text-slate-600">Formulario de Google para la autoevaluación final.</p>
+          <a class="mt-4 btn btn-primary" href="https://docs.google.com/forms/d/ID_DE_TU_FORM" target="_blank" rel="noopener">Abrir Formulario</a>
+          <p class="mt-3 text-xs text-slate-500">Activa la opción de recopilar direcciones y limitar a 1 respuesta si lo deseas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Créditos / Licencias -->
+    <span id="creditos" class="anchor"></span>
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Créditos</h2>
+      <p class="text-sm text-slate-600">Material docente para la asignatura “Digitalización aplicada” (CFGS). © <span id="teacherName">Docente</span>. Licencia: CC BY-NC-SA salvo que se indique lo contrario.</p>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 py-8 text-sm text-slate-500 flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
+      <p>Hecho con HTML + Tailwind. Publicable en GitHub Pages.</p>
+      <a class="link" href="#contenido">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- Pequeño script para calidad de vida (sin dependencias) -->
+  <script>
+    // Muestra aviso si un enlace local no existe (en producción, los 404 se verán en la red, esto es sólo UX)
+    document.querySelectorAll('a[href^="./assets/"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        // no bloquear; simple aviso
+        setTimeout(()=>{
+          if (!a.dataset.ok) {
+            console.warn('Comprueba que has subido el archivo:', a.getAttribute('href'))
+          }
+        }, 500)
+      })
+    })
+  </script>
+</body>
+</html>
